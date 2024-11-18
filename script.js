@@ -25,7 +25,7 @@ function getComputerChoice() {
     const random = Math.random() 
     if (random < 0.34) {
         return 'rock'
-    } else if(random <= 0.67) {
+    } else if(random >= 0.67) {
         return 'paper'
     } else {
         return 'scissors'
@@ -38,12 +38,12 @@ function getWinner(p, c) {
     if (p === c) {
         return 'draw'
     } else if (p === 'rock'){
-        if (c==='papper'){
+        if (c==='paper'){
             return 'computer'
         } else {
             return 'player'
         }
-    } else if (p === 'papper'){
+    } else if (p === 'paper'){
         if(c==='scissors') {
             return 'computer'
         } else {
